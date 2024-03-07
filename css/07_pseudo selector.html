@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 가상 클라스 선택자 */
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        color: white;
+        background-color: blue;
+      }
+      /*마우스를 올려놓을떄만 색깔이 달라짐*/
+
+      /*방문한 적이 없는 링크일 떈 색깔 다르게*/
+      a:link {
+        color: blue;
+      }
+
+      /* 방문한 적이 있는 링크 색깔변경*/
+      a:visited {
+        color: green;
+      }
+
+      /*마우스가 포커스 됐을 떄*/
+      input:focus {
+        border: 5px solid red;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      table {
+        width: 100%;
+      }
+      tbody > tr:nth-child(2n) {
+        background-color: greenyellow;
+      }
+
+      tbody > tr:nth-child(odd) {
+        background-color: orange;
+      }
+
+      /* 2n은 짝수라는 뜻 홀수는 당연 2n+1하면 되겠지 짝수만 색깔입히기
+      짝수는 even 홀수는 odd로도 가능*/
+    </style>
+  </head>
+  <body>
+    <a href="https://naver.com">naver</a>
+    <a href="https://google.com">google</a>
+    <a href="http://sdkfjaklef.com">가짜사이트주소</a>
+    <br />
+    <button>조회</button>
+    <br />
+    <input type="text" name="" id="" />
+
+    <table>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>연락처</th>
+          <th>이메일</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>에이다</td>
+          <td>010-0000-0001</td>
+          <td>a@gmail.com</td>
+        </tr>
+        <tr>
+          <td>비역슨</td>
+          <td>010-0000-0002</td>
+          <td>b@gmail.com</td>
+        </tr>
+        <tr>
+          <td>크리스</td>
+          <td>010-0000-0003</td>
+          <td>c@gmail.com</td>
+        </tr>
+        <tr>
+          <td>드록바</td>
+          <td>010-0000-0004</td>
+          <td>d@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

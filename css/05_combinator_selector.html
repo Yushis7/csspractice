@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 복합 선택자
+        하위 선택자 방식
+         */
+      section ul {
+        border: 1px solid black;
+      }
+      /* 섹션 태그에 있는 모든 ul태그 찾기 */
+
+      /* 자식 선택자 = 자식만 찾는다 ul하나만 찾는다 */
+      section > ul {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>p태그</p>
+      <ul>
+        <li>
+          li태그
+          <ul>
+            <li>li태그</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
